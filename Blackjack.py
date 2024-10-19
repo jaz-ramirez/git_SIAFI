@@ -1,3 +1,5 @@
+#EJEMPLO DE CÓDIGO DENTRO DE REPOSITORIO REMOTO
+#Juego de blackjac SIAFI JAZMÍN RAMÍREZ
 from random import shuffle, randint
 import os
 import random
@@ -60,7 +62,7 @@ class Mazo:
                 print(f"La cut card está ahora en la posición {pos_actual_cut_card + 1} (contando desde 1) después de barajar.")
         else:
             shuffle(self.cartas)
-
+    #se muestaran cartas entregadas al jugador
     def entregar_carta(self):
         carta = self.cartas.pop()
         if carta == self.cut_card:
